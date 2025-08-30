@@ -1,8 +1,9 @@
 # FCG - Fundamentos de Computação Gráfica
 
-## Professor: <a href="https://www.linkedin.com/in/guilhermechagaskurtz/" target="_blank">Guilherme Chagas Kurtz</a>
+## Professor: [Guilherme Chagas Kurtz](https://www.linkedin.com/in/guilhermechagaskurtz/)
 
-## Tecnologias:
+### Tecnologias
+
 * Python
 * Numpy
 * OpenGL
