@@ -31,7 +31,7 @@ class Object():
 
         # position x e y 
         pos_x, pos_y = location[0], location[1]
-        #position somada com o tamanho
+        # position somada com o tamanho
         psum_x, psum_y = pos_x + size[0], pos_y + size[1]
         
         house_points = [ 

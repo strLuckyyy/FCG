@@ -35,9 +35,9 @@ class Tree(Object):
         glBindVertexArray(self.leaves_vao)
         
         transform = self.transformation(
-            translate=[0.5, 0.0, 0.0],
-            rotate=[0.0, 0.5, 0.0],
-            scale=[1.0, 2.0, 1.0]
+            translate=[0., 0.0, 0.0],
+            rotate=[0.0, 0., 0.0],
+            scale=[1.0, 1.0, 1.0]
         )
         
         transformLoc = glGetUniformLocation(shader_programm, "matriz")
