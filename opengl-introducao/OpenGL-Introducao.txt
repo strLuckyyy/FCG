@@ -1,0 +1,26 @@
+-----------------------------------------
+
+Estude o Exemplo de renderização de um triângulo e o Exemplo de renderização de um quadrado, 
+e então aponte as principais diferenças que vocês encontraram na renderização do quadrado em relação a renderização do triângulo, 
+buscando tentar explicar o porquê delas.
+
+-----------------------------------------
+
+r:
+Na renderização do triângulo utiliza apenas 3 pontos na definição do VBO para montar a geometria
+(o mínimo para formar uma geometria plana), enquanto isso o render do quadrado utiliza 6 pontos, 
+ou seja, 2 triângulos para a modelagem.
+
+Ocorre o mesmo com a pintura dos vertices, como aumentou a quantidade de vertices de um objeto para 
+o outro, a quantidade de pontos a serem pintados devem ser definidos caso queire uma superficie totalmente
+pintada.
+
+Outra diferença ocorre na iniciação da renderização, onde o glDrawArrays muda de 3 no triângulo 
+para 6 no quadrado. Essa mudança é para acompanhar a adição de mais pontos no VBO, assim o OpenGL 
+"entende" que deve renderizar mais pontos.
+
+Desse modo, entendo que o quadrado é apenas uma "junção" de 2 triângulos, e essa mudança deve ser
+informado ao OpenGL para que ele "saiba" quantos pontos deve renderizar e quais colorir durante a formação
+da geometria.
+
+by: Abrahao Francis Gonçalves
