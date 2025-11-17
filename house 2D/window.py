@@ -12,7 +12,7 @@ class Window():
         self.WIDTH = width
         self.HEIGHT = height
         
-    def redimensionCallback(self, window, w, h):
+    def redimensionCallback(self, w, h):
         self.WIDTH = w
         self.HEIGHT = h
         
